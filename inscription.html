@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #EC2027;
+            background-size:cover;
+            background-position:center;
+        }
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-fliter: blur(10px);
+            color: #fff;
+            border-radius:12px;
+            padding:30px 40px;
+        }
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font: size 16px;
+            color:#333;
+            font-weight:600;
+        }
+        .wrapper .form{
+            width: 100%;
+            position: relative;
+            height: 50px;
+            margin: 30px 0;
+        }
+        .wrapper .input-box {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+
+        }
+
+        .input-box input::placeholder {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-box">
+            <h1>Inscription</h1>
+            <form action="user.php" method="post">
+                <div class="input-box">
+                    <label for="text">Email:</label><br>
+                    <input type="text" name="email" placeholder="votre mail"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="text">Mot de Passe:</label><br>
+                    <input type="text" name="mdp" placeholder="votre mot de passe"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="role">Role:</label><br>
+                    <input type="text" name="role" placeholder="role"><br><br>
+                </div>
+                <button type="submit" class="btn">Se Connecter</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

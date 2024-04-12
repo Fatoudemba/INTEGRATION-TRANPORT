@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 16px 0;
+    z-index: 999;
+}
+
+.header-white {
+    background-color: white;
+}
+
+.header-white .main-menu li a svg path {
+    stroke: #EC2027
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    gap: 36px;
+    list-style: none;
+}
+
+.main-menu li a {
+    color: #031933;
+    text-decoration: none;
+}
